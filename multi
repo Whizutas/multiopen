@@ -9,3 +9,4 @@ local StarDropdown = StarOptionSection:AddDropdown({
         print("Star option set to: " .. Value)
     end
 })
+
