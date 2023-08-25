@@ -1,1 +1,11 @@
-Print (world)
+local StarOptionSection = OptionsTab:AddSection({Name = "Star Option"})
+
+-- Criar um dropdown para a opção "Star"
+local StarDropdown = StarOptionSection:AddDropdown({
+    Name = "Star",
+    Default = "Off",
+    Options = {"On", "Off"},
+    Callback = function(Value)
+        print("Star option set to: " .. Value)
+    end
+})
